@@ -1,0 +1,18 @@
+r=int(input())/255
+g=int(input())/255
+b=int(input())/255
+v=max(r,g,b)
+min=min(r,g,b)
+if(v):
+    s=(v-min)/v
+else:
+    s=0
+if(v==r):
+    h=60*((g-b)/(v-min))
+elif(v==g):
+    h=60*(2+(b-r)/(v-min))
+elif(v==b):
+    h=60*(4+(r-g)/(v-min))
+if(h<0):
+    h+=360
+print(f"{h:.4f},{s*100:.4f}%,{v*100:.4f}%")
