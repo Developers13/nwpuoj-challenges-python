@@ -1,3 +1,5 @@
+# 功能：判断两向量是否平行
+
 def testParallel(a, b, c, d):
     vector1 = (b[0] - a[0], b[1] - a[1])
     vector2 = (d[0] - c[0], d[1] - c[1])
@@ -14,4 +16,3 @@ y3 =int(input())
 x4 =int(input())
 y4 =int(input())
 testParallel((x1, y1), (x2, y2), (x3, y3), (x4, y4))
-    

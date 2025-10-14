@@ -1,4 +1,6 @@
 from math import sqrt as sq
+# 功能：判断输入的两条边能否与第三边组成直角三角形，并输出是哪条边为斜边或不能组成
+
 a=int(input())
 b=int(input())
 ls=[a,b]

@@ -1,4 +1,5 @@
-from math import *
+# 功能：使用哈弗辛公式计算两点间球面距离
+from math import sin, cos, asin, sqrt, radians
 def hav(x):
     return (sin(x/2))**2
 def ahav(x):

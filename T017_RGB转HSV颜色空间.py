@@ -1,3 +1,4 @@
+# 功能：将RGB颜色值转换为HSV颜色空间并输出
 r=int(input())/255
 g=int(input())/255
 b=int(input())/255

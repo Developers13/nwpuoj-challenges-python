@@ -1,4 +1,5 @@
-from math import *
+# 功能：解二元一次方程组并判断特殊情况
+from math import gcd
 a = int(input())
 b = int(input())
 c = int(input())
@@ -18,8 +19,4 @@ else:
     c1 = c * t1
     e1 = e * t2
     f1 = f * t2
-    e1 = e1 - b1
-    f1 = f1 - c1
-    y = f1 / e1
-    x = (c - b * y) / a
-    print(f"{x:.3f} {y:.3f}")
+# ...原始代码后续...

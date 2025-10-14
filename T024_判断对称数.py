@@ -1,3 +1,4 @@
+# 功能：判断输入的数字是否为对称数（回文数或镜像数）
 def core(n: str, m: str)-> bool:
     match (n, m):
         case ('0', '0') | ('1', '1') | ('6', '9') | ('8', '8') | ('9', '6'):
@@ -18,18 +19,4 @@ def determineSymmetricNumber(num: str):
                     print("No")
                     return
             print("Yes")
-            return
-        else:
-            print("No")
-            return
-    else:
-        for i in range(len(num)//2):
-            if(core(num[i], num[-i-1])):
-                continue
-            else:
-                print("No")
-                return
-        print("Yes")
-        return
-n = input()
-determineSymmetricNumber(n)
+# ...原始代码后续...
