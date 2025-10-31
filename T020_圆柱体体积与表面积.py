@@ -1,5 +1,9 @@
-# 功能：计算圆柱体的体积和表面积
+import math
 h=float(input())
 r=float(input())
-pi=3.14159265
-print(f"{h*pi*r**2:.4f}\n{(h*2*pi*2)+(2*pi*r**2):.4f}")
+PI=math.acos(-1.0)
+V=PI*r*r*h
+S=PI*r*r*2+2*PI*r*h
+print("%.4f"%V)
+print("%.4f"%S)
+

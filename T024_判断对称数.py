@@ -10,13 +10,19 @@ def determineSymmetricNumber(num: str):
     if int(num) < 0:
         print("No")
         return
+    # 奇数长度需要中间字符是 0/1/8
     if (len(num) % 2) != 0:
-        if(num[len(num)//2 + 1] == '0' or '1' or '8'):
-            for i in range(len(num)//2):
-                if(core(num[i], num[-i-1])):
-                    continue
-                else:
-                    print("No")
-                    return
-            print("Yes")
-# ...原始代码后续...
+        mid = num[len(num)//2]
+        if mid not in ('0', '1', '8'):
+            print("No")
+            return
+    # 检查对称对
+    for i in range(len(num)//2):
+        if core(num[i], num[-i-1]):
+            continue
+        else:
+            print("No")
+            return
+    print("Yes")
+
+determineSymmetricNumber(input())
